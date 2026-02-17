@@ -18,7 +18,6 @@ body {
     direction: rtl;
 }
 
-/* --- الهيدر --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -48,7 +47,7 @@ body {
 }
 
 .logo-img {
-    height: 60px; /* تحكمي في مقاس اللوجو من هنا */
+    height: 60px; 
     width: auto;
 }
 
@@ -89,16 +88,14 @@ body {
     transition: var(--transition);
 }
 
-/* --- إخفاء قائمة الموبايل في الشاشات الكبيرة --- */
 .mobile-nav-overlay {
-    display: none; /* هذا السطر هو حل المشكلة اللي في الصورة */
+    display: none; 
 }
 
 .menu-toggle {
     display: none;
 }
 
-/* --- قسم الهيرو (الرئيسية) --- */
 .hero {
     height: 100vh;
     width: 100%;
@@ -171,8 +168,6 @@ body {
 .btn-secondary { border: 2px solid #fff; color: #fff; }
 
 .btn:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-
-/* --- استعلامات الموبايل (Responsive) --- */
 @media (max-width: 992px) {
     .nav-links, .nav-cta {
         display: none;
@@ -192,7 +187,7 @@ body {
     }
 
     .mobile-nav-overlay {
-        display: flex; /* تظهر فقط في الموبايل عند الطلب */
+        display: flex;
         position: fixed;
         top: -100%;
         left: 0;
@@ -227,7 +222,6 @@ body {
     .hero-title { font-size: 2.2rem; }
     .hero-btns { flex-direction: column; }
 }
-/* --- About Modern Section --- */
 .about-modern {
     padding: 150px 0;
     background: #050a18;
@@ -236,7 +230,6 @@ body {
     color: #fff;
 }
 
-/* أشكال متحركة في الخلفية */
 .bg-shape {
     position: absolute;
     border-radius: 50%;
@@ -262,7 +255,6 @@ body {
     padding: 0 50px;
 }
 
-/* تصميم الجانب الصوري */
 .modern-image-side {
     flex: 1;
     position: relative;
@@ -270,7 +262,7 @@ body {
 
 .image-mask {
     position: relative;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* شكل عضوي عصري */
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
     overflow: hidden;
     border: 5px solid rgba(212, 175, 55, 0.3);
     box-shadow: 0 0 50px rgba(212, 175, 55, 0.2);
@@ -300,7 +292,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* تصميم الجانب النصي */
 .modern-text-side {
     flex: 1.2;
 }
@@ -333,7 +324,6 @@ body {
     line-height: 1.8;
 }
 
-/* شبكة المميزات (بديل المقال) */
 .features-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -389,7 +379,6 @@ body {
 
 .explore-more:hover { gap: 15px; }
 
-/* موبايل */
 @media (max-width: 992px) {
     .modern-wrapper {
         flex-direction: column;
@@ -410,11 +399,9 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-/* تأخير متتابع للكروت */
 .f-card:nth-child(2) { transition-delay: 0.2s; }
 .f-card:nth-child(3) { transition-delay: 0.4s; }
 .f-card:nth-child(4) { transition-delay: 0.6s; }
-/* --- Services Section --- */
 .services {
     padding: 120px 0;
     background: #0b1120;
@@ -457,7 +444,6 @@ body {
     border-radius: 2px;
 }
 
-/* شبكة الكروت */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -538,8 +524,6 @@ body {
     z-index: -1;
     transition: 0.5s;
 }
-
-/* تأثيرات الـ Hover المبدعة */
 .service-card:hover {
     transform: translateY(-15px);
     background: rgba(212, 175, 55, 0.05);
@@ -558,7 +542,6 @@ body {
     transform: scale(1.2);
 }
 
-/* خلفية السكشن الإضافية (Blurry Circles) */
 .services::before {
     content: '';
     position: absolute;
@@ -570,13 +553,11 @@ body {
     z-index: -1;
 }
 
-/* موبايل ريسبونسيف */
 @media (max-width: 768px) {
     .section-main-title { font-size: 1.8rem; }
     .services-grid { padding: 0 20px; }
     .service-card { padding: 30px 20px; }
 }
-/* --- Pure Portfolio Section --- */
 .pure-portfolio {
     padding: 100px 0;
     background: #050a18;
@@ -612,7 +593,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* شبكة الصور */
 .pure-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -621,7 +601,7 @@ body {
 }
 
 .pure-item {
-    perspective: 1000px; /* لإضافة عمق بسيط */
+    perspective: 1000px; 
 }
 
 .frame {
@@ -639,11 +619,10 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(20%); /* لمسة سينمائية بسيطة */
+    filter: grayscale(20%); 
     transition: all 0.8s ease;
 }
 
-/* --- تأثير الهوفر المبدع --- */
 .frame:hover {
     border-color: var(--primary-color);
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
@@ -655,7 +634,6 @@ body {
     transform: scale(1.1);
 }
 
-/* إضافة لمعة خفيفة بتتحرك على الصورة عند الهوفر */
 .frame::after {
     content: '';
     position: absolute;
@@ -671,8 +649,6 @@ body {
 .frame:hover::after {
     left: 125%;
 }
-
-/* الموبايل */
 @media (max-width: 992px) {
     .pure-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -684,12 +660,11 @@ body {
 
 @media (max-width: 600px) {
     .pure-grid {
-        grid-template-columns: 1fr; /* صورة واحدة بعرض الشاشة في الموبايل الصغير */
+        grid-template-columns: 1fr; 
     }
     .frame { height: 300px; }
     .pure-title { font-size: 1.6rem; }
 }
-/* --- Why Us Section --- */
 .why-us {
     padding: 120px 0;
     background: linear-gradient(to bottom, #0a132c, #0b1120);
@@ -731,7 +706,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* شبكة الكروت */
 .why-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -751,7 +725,6 @@ body {
     overflow: hidden;
 }
 
-/* تأثير الإضاءة في الخلفية عند الهوفر */
 .why-card::before {
     content: '';
     position: absolute;
@@ -775,7 +748,6 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* ستايل الأيقونات */
 .why-icon {
     width: 80px;
     height: 80px;
@@ -809,7 +781,6 @@ body {
     line-height: 1.7;
 }
 
-/* الموبايل ريسبونسيف */
 @media (max-width: 768px) {
     .why-grid {
         padding: 0 20px;
@@ -818,19 +789,17 @@ body {
         font-size: 1.8rem;
     }
 }
-/* --- Contact Section --- */
 .contact {
     position: relative;
     padding: 100px 0;
-    min-height: 100vh; /* يضمن إن السكشن واخد طول الشاشة */
+    min-height: 100vh; 
     display: flex;
-    align-items: center; /* توسيط عمودي */
-    justify-content: center; /* توسيط أفقي */
+    align-items: center; 
+    justify-content: center; 
     background: url('images/rodrigo-rodrigues-wolf-r-t-YXHUyi3IAAg-unsplash.jpg') center/cover fixed;
     overflow: hidden;
 }
 
-/* تأثير البلور */
 .contact-bg-overlay {
     position: absolute;
     inset: 0;
@@ -844,16 +813,16 @@ body {
     z-index: 2;
     width: 100%;
     display: flex;
-    justify-content: center; /* لضمان توسيط الـ wrapper داخل الـ container */
+    justify-content: center; 
 }
 
 .contact-wrapper {
     display: flex;
     gap: 100px;
     width: 100%;
-    max-width: 1100px; /* تحديد عرض أقصى عشان الكروت متفرشش بزيادة */
-    justify-content: center; /* توسيط الكروت بجانب بعضها */
-    align-items: stretch; /* يخلي الكاردين نفس الطول */
+    max-width: 1100px; 
+    justify-content: center; 
+    align-items: stretch; 
 }
 
 .contact-card {
@@ -867,8 +836,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-/* لو الشاشة كبيرة جداً، الكروت متكبرش بزيادة وتفضل في النص */
 @media (min-width: 1200px) {
     .contact-card {
         max-width: 500px;
@@ -879,7 +846,7 @@ body {
     color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 20px;
-    text-align: center; /* توسيط العنوان داخل الكارد */
+    text-align: center; 
 }
 
 .card-desc {
@@ -889,7 +856,6 @@ body {
     text-align: center;
 }
 
-/* ستايل أيقونات التواصل */
 .contact-links {
     display: flex;
     flex-direction: column;
@@ -924,8 +890,6 @@ body {
     font-size: 1.2rem;
     flex-shrink: 0;
 }
-
-/* ستايل الفورم */
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -955,8 +919,6 @@ body {
     transition: 0.3s;
     margin-top: 10px;
 }
-
-/* موبايل ريسبونسيف */
 @media (max-width: 992px) {
     .contact {
         padding: 60px 20px;
@@ -970,7 +932,6 @@ body {
         max-width: 100% !important;
     }
 }
-/* --- Footer Styles --- */
 .site-footer {
     background: #050a18;
     color: #fff;
@@ -1072,7 +1033,6 @@ body {
     font-weight: 700;
 }
 
-/* --- Floating Buttons --- */
 .floating-btns {
     position: fixed;
     bottom: 30px;
@@ -1104,8 +1064,6 @@ body {
 .float-btn:hover {
     transform: scale(1.1) translateY(-5px);
 }
-
-/* Tooltip on Hover */
 .tooltip {
     position: absolute;
     right: 75px;
@@ -1135,7 +1093,6 @@ body {
     100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
 }
 
-/* Responsive Footer */
 @media (max-width: 992px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
@@ -1152,26 +1109,19 @@ body {
     .floating-btns { bottom: 20px; right: 20px; }
     .float-btn { width: 50px; height: 50px; font-size: 1.5rem; }
 }
-/* سكرول ناعم جداً لكل الصفحة */
 html {
     scroll-behavior: smooth;
 }
-
-/* شكل اللينك لما يكون نشط (Active) */
 .nav-links a.active, 
 .mobile-nav-links a.active {
     color: var(--primary-color) !important;
     font-weight: 800;
 }
-
-/* إضافة خط تحت اللينك النشط في الكمبيوتر */
 @media (min-width: 993px) {
     .nav-links a.active::after {
         width: 100% !important;
     }
 }
-
-/* كلاسات الانميشن اللي الجافا سكريبت بيستخدمها */
 .before-animate {
     opacity: 0;
     transform: translateY(30px);
